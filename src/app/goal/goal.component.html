@@ -1,11 +1,12 @@
 <h1>My Goals</h1>
+<hr>
 <div class="container">
   <div class="row">
       <app-goal-form></app-goal-form>
   </div>
 </div>
   
-<hr>
+
 <ul>
   <div *ngFor='let goal of goals;let i = index'>
     <li id = "{{i}}" appStrikethrough> {{goal.name}} due on {{goal.completeDate|date|uppercase}}</li>
