@@ -10,7 +10,8 @@ import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import {AlertService} from './alert-service/alert.service';
 import {HttpClientModule} from '@angular/common/http';
-
+import {NgProgressHttpModule} from '@ngx-progressbar/http';
+import {NgProgressModule} from '@ngx-progressbar/core';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule.forRoot(),//normal progress bar
+    NgProgressHttpModule //progress bar to load http request
   ],
   providers: [AlertService],// Add service to providers
   bootstrap: [AppComponent]
