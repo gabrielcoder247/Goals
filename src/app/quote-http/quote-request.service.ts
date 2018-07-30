@@ -8,6 +8,7 @@ import {Quote} from '../quote-class/quote'
 export class QuoteRequestService {
 
 quote:Quote;
+
   constructor(private http:HttpClient) {
     this.quote = new Quote(" "," ");
    }
