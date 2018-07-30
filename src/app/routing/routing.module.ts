@@ -6,7 +6,7 @@ import {RouterModule,Routes} from '@angular/router'
 import { GoalComponent } from '../goal/goal.component';
 import { AboutComponent } from '../about/about.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
-import { GoalDetailsComponent } from '../goal-detials/goal-details.component';
+import { GoalDetailsComponent } from '../goal-details/goal-details.component';
 
 
 //Defining routes
